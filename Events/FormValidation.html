@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Registration Form</title>
+<link rel="stylesheet" href="FornValidation.css">
+</head>
+<body>
+  <form id="regForm" novalidate>
+    <h1>Register</h1>
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name">
+    <div class="error" id="nameError"></div>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email">
+    <div class="error" id="emailError"></div>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password">
+    <div class="error" id="passwordError"></div>
+
+    <button type="submit">Register</button>
+    <div class="success" id="successMsg">You're registered</div>
+  </form>
+
+  <script src="FormValidation.js"></script>
+</body>
+</html>
